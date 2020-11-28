@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+javafx {
+    version = "11.0.2"
+    modules = [ 'javafx.base', 'javafx.controls', 'javafx.fxml' ]
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':common')
+    compile 'org.apache.commons:commons-lang3:3.9'
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+mainClassName = 'ru.zakharova.elena.network.chat.client.App'
