@@ -19,7 +19,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        stage.setTitle("Сетевой чат");
+        stage.setTitle("Network chat");
         stage.getIcons().add(new Image("/images/stage_icon.png"));
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/primary.fxml"));

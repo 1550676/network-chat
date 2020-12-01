@@ -20,7 +20,7 @@ public class Network implements Closeable {
     private DataInputStream inputStream;
     private DataOutputStream outputStream;
 
-    public Network(String serverAddress, int port, IMessageService messageService) throws IOException {
+    public Network(String serverAddress, int port, IMessageService messageService) {
         this.serverAddress = serverAddress;
         this.port = port;
         this.messageService = messageService;
@@ -50,7 +50,7 @@ public class Network implements Closeable {
 
     public void send(String message) {
         try {
-            if (outputStream == null) { // если клиент еще не подключился
+            if (outputStream == null) { // if the client has not yet connected
                 initNetworkState(serverAddress, port);
             }
             outputStream.writeUTF(message);

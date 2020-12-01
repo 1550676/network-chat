@@ -13,13 +13,13 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.zakharova.elena.network.chat.client.PrimaryController">
     <children>
         <HBox fx:id="authPanel" alignment="CENTER" layoutX="42.0" layoutY="98.0">
-            <TextField fx:id="loginField" promptText="Логин" HBox.hgrow="ALWAYS" />
-            <PasswordField fx:id="passField" promptText="Пароль" HBox.hgrow="ALWAYS">
+            <TextField fx:id="loginField" promptText="Login" HBox.hgrow="ALWAYS" />
+            <PasswordField fx:id="passField" promptText="Password" HBox.hgrow="ALWAYS">
                 <HBox.margin>
                     <Insets left="5.0" />
                 </HBox.margin>
             </PasswordField>
-            <Button onAction="#sendAuth" text="Подключиться" HBox.hgrow="ALWAYS">
+            <Button onAction="#sendAuth" text="Connection" HBox.hgrow="ALWAYS">
                 <HBox.margin>
                     <Insets left="10.0" />
                 </HBox.margin>
@@ -31,8 +31,8 @@
         <VBox fx:id="chatPanel" alignment="CENTER" spacing="5.0" visible="false" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="2.0">
             <children>
               <HBox fx:id="nickChangePanel" alignment="CENTER">
-                  <TextField fx:id="newNickField" promptText="Новый ник" HBox.hgrow="ALWAYS" />
-                  <Button onAction="#sendNickChange" text="Сменить ник" HBox.hgrow="ALWAYS">
+                  <TextField fx:id="newNickField" promptText="New nick name" HBox.hgrow="ALWAYS" />
+                  <Button onAction="#sendNickChange" text="Change nick name" HBox.hgrow="ALWAYS">
                       <HBox.margin>
                           <Insets left="10.0" />
                       </HBox.margin>

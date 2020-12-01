@@ -152,7 +152,7 @@ public class PrimaryController implements Initializable {
 
     public void showError(String errorMsg) {
         Alert alert = new Alert(Alert.AlertType.WARNING);
-        alert.setTitle("Ошибка");
+        alert.setTitle("Error");
         alert.setContentText(errorMsg);
         alert.showAndWait();
     }

@@ -43,11 +43,7 @@ public class ServerMessageService implements IMessageService {
     }
 
     private void startConnectionToServer() {
-        try {
-            this.network = new Network(hostAddress, hostPort, this);
-        } catch (IOException e) {
-            throw new ServerConnectionException("Failed to connect to server", e);
-        }
+        this.network = new Network(hostAddress, hostPort, this);
     }
 
     private void readProperties() {
