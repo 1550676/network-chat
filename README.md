@@ -1,4 +1,4 @@
-Client-server network storage (without using Java EE).
+Client-server network chat (without using Java EE).
 
 Basic functionalities:
 - Sending and receiving user's messages (in common chat, as well as in private one).
