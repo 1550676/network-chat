@@ -45,13 +45,13 @@ public class BaseAuthService implements AuthService{
 
     @Override
     public boolean isNickBusy(String newNick) {
-        System.out.println("Заглушка");
+        System.out.println("This functionality is under development.");
         return true;
     }
 
     @Override
     public void changeNick(String nick, String newNick) {
-        System.out.println("Заглушка");
+        System.out.println("This functionality is under development.");
     }
 }
 
