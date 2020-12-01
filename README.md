@@ -1,9 +1,26 @@
+Client-server network chat (without using Java EE).
+
+Basic functionalities:
+
+- Sending and receiving messages (in General chat, as well as in private).
+- - Saving the conversation history and displaying it when the client application is launched.
+File transfer (including directories) by byte protocol: sending files to the server, downloading files, viewing files on the server for each user, deleting files locally/on the server.
+Files are stored on the server in directories with user's names.
+Authentication. A database is used for storing users.
+The client has a simple graphical interface in JavaFX.
+
+For tests: 
+  login - l1 
+  password - p1
+
 Сетевой чат (без использования Java EE).
 
 Основные возможности:
-- Передача файлов (включая папки) байтовым протоколом: отправка файлов на сервер, скачивание файлов, просмотр файлов на сервере для каждого пользователя, удаление файлов локально/на сервере
-- Файлы хранятся на сервере в папках с именами пользователей 
-- Аутентификация. Для хранения пользователей используем базу данных
-- На клиенте должен быть простой графический интерфейс на JavaFX
-- Древовидную структуру внутри папки пользователя на сервере
-- Логирование было добавлено только на серверной части
+- Отправка и получение сообщений (в общем чате, а также в приватном). 
+- Сохраниение истории переписки и отображение ее при запуске клиентского приложения. 
+- Аутентификация. Для хранения пользователей используется база данных.
+- На клиенте реализовн простой графический интерфейс на JavaFX.
+
+Для теста:
+логин l1
+пароль p1
